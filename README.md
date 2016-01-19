@@ -1,20 +1,22 @@
 # vidlengths
 
 This script traverses a given directory tree and outputs a csv file containing a table of all the
-.mp4 files and their lengths in seconds. 
+.mp4 files and their lengths in seconds.
 
 ## usage
 
 ```
-$: python vidlengths root_dir output.csv
+$: python vidlengths root_dir output.csv [-nomov] [-nomp4]
 ```
 
-The /data directory has nested .mp4 files that you can test the script with. 
+The -nomov and -nomp4 flags are optional. If passed to the script, they tell it to either ignore mov files or ignore mp4 files. If you pass both, it won't find any files whatsoever.
+
+The /data directory has nested .mp4 files that you can test the script with.
 
 For example:
 
 ```
-$: python vidlengths data output_test.csv
+$: python vidlengths data output_test.csv -nomov
 ```
 
 ## dependencies
