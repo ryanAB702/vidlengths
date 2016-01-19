@@ -44,7 +44,7 @@ def check_extension(filename):
 
 def print_usage():
     print "\nUSAGE:\n"
-    print "$: python vidlengths.py [directory] [output_csv] [-nomp4] [-nomov]\n"
+    print "$: python vidlengths.py directory output_csv [-nomp4] [-nomov]\n"
 
 if __name__ == "__main__":
 
